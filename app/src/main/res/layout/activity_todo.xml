@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TodoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextTitle"
+                style="@style/CommonEditTextStyle"
+                android:layout_marginTop="@dimen/padding_margin_50"
+                android:hint="@string/title"
+                android:imeOptions="actionNext"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextDescription"
+                style="@style/CommonEditTextStyle"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:layout_height="@dimen/height_width_100"
+                android:hint="@string/description"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                 />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewCreate"
+                style="@style/CommonSignupButtonStyle"
+                android:layout_marginTop="@dimen/padding_margin_15"
+                android:text="@string/Save" />
+
+            <LinearLayout
+                android:id="@+id/linearlayoutupdatedelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padding_margin_15">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textviewUpdate"
+                    style="@style/CommonSignupButtonStyle"
+                    android:text="@string/update"
+                    android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textviewdelete"
+                    style="@style/CommonSignupButtonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
