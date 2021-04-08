@@ -5,39 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HomeActivity">
+    tools:context=".ui.MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:background="@color/white"
-        >
+        android:orientation="vertical">
 
-        <include layout="@layout/toolbar"
-            android:id="@+id/toolbars"/>
+        <include layout="@layout/toolbar" />
 
+        <include layout="@layout/main"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_viewToDoList"
+            android:id="@+id/recyclerviewContact"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:background="@color/white"
-            android:layout_below="@+id/toolbars"/>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/noteActivity_floatingButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/dashusername"
-            android:src="@drawable/ic_add"
-            app:fabSize="normal" />
-    </RelativeLayout>
-
-
+            android:background="@color/white"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

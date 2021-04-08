@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.recyclerviewwithpagination">
+    package="com.example.contacts">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,18 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.TodoActivity"
+            android:name="com.example.contacts.ui.TodoActivity"
             android:launchMode="singleTask">
 
         </activity>
         <activity
-            android:name=".ui.HomeActivity"
+            android:name="com.example.contacts.ui.HomeActivity"
             android:launchMode="singleTask">
 
         </activity>
         <activity
-            android:name=".ui.LoginActivity"
-            android:launchMode="singleTask">
+            android:name="com.example.contacts.ui.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

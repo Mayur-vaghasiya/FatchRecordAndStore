@@ -1,13 +1,19 @@
 <resources>
-    <string name="app_name">TODO</string>
+    <string name="app_name">CONTACTLIST</string>
     <string name="todolist">ToDoList</string>
     <string name="todo">ToDo</string>
     <string name="username">UserName</string>
     <string name="password">Password</string>
     <string name="title">Title</string>
-    <string name="description">Description</string>
+    <string name="description">Address</string>
     <string name="login">Login</string>
-    <string name="Save">Create</string>
+    <string name="Save">Update</string>
     <string name="delete">Delet</string>
     <string name="update">Update</string>
+    <string name="taskone">GetData</string>
+    <string name="tasktwo">ShowData</string>
+    <string name="search">Search</string>
+    <string name="email">Email</string>
+    <string name="Gender">Gender</string>
+    <string name="Mobile">Mobile</string>
 </resources>

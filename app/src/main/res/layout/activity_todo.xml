@@ -32,43 +32,25 @@
                 />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/edittextDescription"
+                android:id="@+id/edittextMail"
                 style="@style/CommonEditTextStyle"
                 android:layout_marginTop="@dimen/padding_margin_10"
-                android:layout_height="@dimen/height_width_100"
-                android:hint="@string/description"
-                android:lines="3"
-                android:inputType="textMultiLine"
-                 />
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                />
 
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextMobile"
+                style="@style/CommonEditTextStyle"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:hint="@string/Mobile"
+                android:imeOptions="actionNext"
+                />
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textviewCreate"
+                android:id="@+id/textviewUpdate"
                 style="@style/CommonSignupButtonStyle"
                 android:layout_marginTop="@dimen/padding_margin_15"
-                android:text="@string/Save" />
-
-            <LinearLayout
-                android:id="@+id/linearlayoutupdatedelete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:visibility="gone"
-                android:layout_marginTop="@dimen/padding_margin_15">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textviewUpdate"
-                    style="@style/CommonSignupButtonStyle"
-                    android:text="@string/update"
-                    android:layout_weight="1"/>
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textviewdelete"
-                    style="@style/CommonSignupButtonStyle"
-                    android:layout_weight="1"
-                    android:text="@string/delete" />
-
-            </LinearLayout>
+                android:text="@string/update" />
 
         </LinearLayout>
 
